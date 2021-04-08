@@ -1,0 +1,70 @@
+\doxysection{Bullet Class Reference}
+\label{class_bullet}\index{Bullet@{Bullet}}
+
+
+{\ttfamily \#include $<$Bullet.\+h$>$}
+
+Inheritance diagram for Bullet\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bullet}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Bullet} (b2\+World $\ast$world, sf\+::\+Vector2f position, sf\+::\+Vector2f size, sf\+::\+Texture $\ast$texture, const float orientation, \textbf{ Collision\+Filter} type)
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\label{class_bullet_abb01f5bb7f734845c61ed2b6491bcfc2}} 
+void \textbf{ draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em drawing function \end{DoxyCompactList}\item 
+\mbox{\label{class_bullet_a32f4a0611fe2dd245fee955d14ca1f68}} 
+void \textbf{ update} ()
+\begin{DoxyCompactList}\small\item\em Update rendering infomation. \end{DoxyCompactList}\item 
+\mbox{\label{class_bullet_a645b589333556812e94e084e8ae17b95}} 
+void \textbf{ Set\+Rotation} (float \textbf{ rotation})
+\begin{DoxyCompactList}\small\item\em Set rotation function. \end{DoxyCompactList}\item 
+\mbox{\label{class_bullet_a1586500676c9e4ba12bbfee3d56923eb}} 
+void \textbf{ on\+Action} ()
+\begin{DoxyCompactList}\small\item\em On action function. \end{DoxyCompactList}\item 
+\mbox{\label{class_bullet_a3f770e23320ee27ed7ebdb521d3f0e9a}} 
+bool \textbf{ should\+Delete} ()
+\begin{DoxyCompactList}\small\item\em a function that adds an object to the list to be deleted \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_bullet_a761f4eae8ea2c61e6e03c02b52c8b2c2}} 
+bool \textbf{ m\+\_\+delete}
+\begin{DoxyCompactList}\small\item\em variable to object deletion \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_bullet_a2cde8b7ed413a862ccf87fc8b83c4a01}} 
+sf\+::\+Rectangle\+Shape \textbf{ Bullet\+\_\+\+Body}
+\begin{DoxyCompactList}\small\item\em \doxyref{Bullet}{p.}{class_bullet} Body. \end{DoxyCompactList}\item 
+\mbox{\label{class_bullet_a593e025f038bc3c9cd2d62209ffff3cf}} 
+float \textbf{ rotation}
+\begin{DoxyCompactList}\small\item\em Rotation variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\textbackslash{}\+Bullet \doxyref{Bullet}{p.}{class_bullet} \textbackslash{}\+The \doxyref{Bullet}{p.}{class_bullet} class creates projectiles used by the player 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_bullet_acda970c5f08a6c5260874add04ac8180}} 
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\doxysubsubsection{Bullet()}
+{\footnotesize\ttfamily Bullet\+::\+Bullet (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world,  }\item[{sf\+::\+Vector2f}]{position,  }\item[{sf\+::\+Vector2f}]{size,  }\item[{sf\+::\+Texture $\ast$}]{texture,  }\item[{const float}]{orientation,  }\item[{\textbf{ Collision\+Filter}}]{type }\end{DoxyParamCaption})}
+
+
+
+Default Constructor. 
+
+A constructor creating an object and determining its properties 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Dratedoni/\+Desktop/\+Projekty c++/\+Year 2 Term 2/\+Student Pack/lab code/\+C\+W\+Starter/\+C\+W\+Starter/include/\textbf{ Bullet.\+h}\item 
+D\+:/\+Dratedoni/\+Desktop/\+Projekty c++/\+Year 2 Term 2/\+Student Pack/lab code/\+C\+W\+Starter/\+C\+W\+Starter/src/\textbf{ Bullet.\+cpp}\end{DoxyCompactItemize}

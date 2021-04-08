@@ -1,0 +1,189 @@
+\doxysection{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_player_aa62062cb0fe1d98149fa2e9fdbf871d5}} 
+enum {\bfseries m\+\_\+move\+State} \{ {\bfseries m\+\_\+\+S\+T\+OP}, 
+{\bfseries m\+\_\+\+L\+E\+FT}, 
+{\bfseries m\+\_\+\+R\+I\+G\+HT}
+ \}
+\item 
+\mbox{\label{class_player_a405c946d4ef649757871a3c9727df982}} 
+enum {\bfseries m\+\_\+jump\+State} \{ {\bfseries j\+\_\+\+S\+T\+OP}, 
+{\bfseries j\+\_\+\+J\+U\+MP}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Player} (b2\+World $\ast$world, const sf\+::\+Vector2f \&position, const sf\+::\+Vector2f \&size, const float orientation, \textbf{ Collision\+Filter} type, sf\+::\+Texture $\ast$Headtexture, sf\+::\+Texture $\ast$Bodytexture, sf\+::\+Texture $\ast$Armtexture, sf\+::\+Texture $\ast$Legtexture)
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\label{class_player_a6181badd16590914fd18d7b52b4e9caf}} 
+void {\bfseries draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\item 
+\mbox{\label{class_player_a78bc02c273a6c3f61a9c0a5e00ca0431}} 
+void \textbf{ update} (sf\+::\+Clock \textbf{ Clock})
+\begin{DoxyCompactList}\small\item\em Update rendering infomation. \end{DoxyCompactList}\item 
+\mbox{\label{class_player_a8f14066d12dd0cf2c6b3798b21305398}} 
+void {\bfseries apply\+Impulse} (b2\+Vec2 impulse)
+\item 
+\mbox{\label{class_player_ab7ba72eff455a2433ca5f612f47d8125}} 
+bool {\bfseries is\+Stopped} () const
+\item 
+\mbox{\label{class_player_a08fc0352dc9961c17707927e796fee6f}} 
+void {\bfseries Step} ()
+\item 
+\mbox{\label{class_player_a6212d0c3b82539e6ee0b89ea555e1afb}} 
+void {\bfseries Move} (bool pw, unsigned char key)
+\item 
+\mbox{\label{class_player_ad5c16d55db381dce19610164f832f63c}} 
+void {\bfseries on\+Action} ()
+\item 
+\mbox{\label{class_player_a66d430c7f2ad1dc582df95c4b2d3cece}} 
+void {\bfseries off\+Action} ()
+\item 
+\mbox{\label{class_player_add0a4feab9bef8c9d09e46ddd52643cd}} 
+void {\bfseries Transform} ()
+\item 
+\mbox{\label{class_player_a23356f99a9de86d3d47eadb679b332dc}} 
+sf\+::\+Vector2f {\bfseries get\+Position} ()
+\item 
+\mbox{\label{class_player_ada4af3a6d6fea1ba083dbcccaa603735}} 
+float {\bfseries get\+Hand\+Rotation} ()
+\item 
+\mbox{\label{class_player_a3aa0c5f51c4ec7069b378dffd8a6240b}} 
+void {\bfseries Hand\+Rotation} (sf\+::\+Vector2f xy)
+\item 
+\mbox{\label{class_player_a82e2351046e718d544b327b60078bcc5}} 
+void {\bfseries add\+Coins} (int add\+Coins)
+\item 
+\mbox{\label{class_player_a487c19342aa5966e28f2470851aca8c5}} 
+void {\bfseries Getkeys} (bool W, bool S, bool A, bool D)
+\item 
+\mbox{\label{class_player_a751e207175fdee71ef8c6e9174749fee}} 
+void {\bfseries Health\+Loss} (char enemy)
+\item 
+\mbox{\label{class_player_a1fb7260e8f31638ef6e5d7909e25e85a}} 
+void {\bfseries register\+For\+Deletion} ()
+\item 
+\mbox{\label{class_player_a79e8f75ceafa817f598d89be7b6564f6}} 
+bool {\bfseries should\+Delete} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_player_aa332927453e91381fe7d0359ee8d1ef3}} 
+bool {\bfseries m\+\_\+delete} = false
+\item 
+\mbox{\label{class_player_a14e7feb3bda71c798d374621600dde7a}} 
+m\+\_\+move\+State {\bfseries move\+State}
+\item 
+\mbox{\label{class_player_a1193cbde86e5b4ea36031a373d3562f7}} 
+m\+\_\+jump\+State {\bfseries jump\+State}
+\item 
+\mbox{\label{class_player_af3460ee6219defdbc499ca26e5b6d406}} 
+sf\+::\+Vector2f {\bfseries Rey\+Vector}
+\item 
+\mbox{\label{class_player_a5fa945d4288635a82932ac60f006e8a2}} 
+float {\bfseries a}
+\item 
+\mbox{\label{class_player_a4efc04265e03909a493661a05a2b21b1}} 
+float {\bfseries m\+\_\+\+Hand\+Rotation}
+\item 
+\mbox{\label{class_player_a6160ab859bfd3d9809d5fa4cba472cb1}} 
+bool {\bfseries W}
+\item 
+\mbox{\label{class_player_ab2c2253fc9357ac08be044a5db46f130}} 
+bool {\bfseries S}
+\item 
+\mbox{\label{class_player_ac09940ad08d26b44095a484b870b68e6}} 
+bool {\bfseries D}
+\item 
+\mbox{\label{class_player_ae76e716704bbe7d5adcbbecc2e3f292e}} 
+bool {\bfseries A}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_player_a2b9534c34e432a9e2e8c63f6364e19e9}} 
+int \textbf{ Coins}
+\begin{DoxyCompactList}\small\item\em \doxyref{Coins}{p.}{class_coins} variable. \end{DoxyCompactList}\item 
+\mbox{\label{class_player_a546c44e6c52eaa6bc7c7831bca413dfd}} 
+bool \textbf{ m\+\_\+stopped} = false
+\begin{DoxyCompactList}\small\item\em jump variable \end{DoxyCompactList}\item 
+\mbox{\label{class_player_a925b1598c7db10c0c5b5c52be5de0452}} 
+sf\+::\+Rectangle\+Shape \textbf{ Player\+\_\+\+Body}
+\begin{DoxyCompactList}\small\item\em \doxyref{Player}{p.}{class_player} Body Rectangle Shape. \end{DoxyCompactList}\item 
+\mbox{\label{class_player_a21903c447487764e3e4ba88bdeef7ed1}} 
+sf\+::\+Rectangle\+Shape \textbf{ Player\+\_\+\+Head}
+\begin{DoxyCompactList}\small\item\em \doxyref{Player}{p.}{class_player} Head Rectangle Shape. \end{DoxyCompactList}\item 
+\mbox{\label{class_player_ad41ba7d4ad2ca2bef3eb2df1e1f20a6f}} 
+sf\+::\+Rectangle\+Shape \textbf{ Player\+\_\+\+Hand}
+\begin{DoxyCompactList}\small\item\em \doxyref{Player}{p.}{class_player} Hand Rectangle Shape. \end{DoxyCompactList}\item 
+\mbox{\label{class_player_a76c805e7115be503d7da79fcdb72dae6}} 
+sf\+::\+Rectangle\+Shape \textbf{ Player\+\_\+l\+Leg}
+\begin{DoxyCompactList}\small\item\em \doxyref{Player}{p.}{class_player} l\+Leg Rectangle Shape. \end{DoxyCompactList}\item 
+\mbox{\label{class_player_acd62affe2162574d5aaa62c13e73a7f2}} 
+sf\+::\+Rectangle\+Shape \textbf{ Player\+\_\+r\+Leg}
+\begin{DoxyCompactList}\small\item\em \doxyref{Player}{p.}{class_player} r\+Leg Rectangle Shape. \end{DoxyCompactList}\item 
+\mbox{\label{class_player_ac995d79d539d14420dcfdb1d42cc6c7f}} 
+sf\+::\+Rectangle\+Shape \textbf{ Player\+\_\+\+Health}
+\begin{DoxyCompactList}\small\item\em \doxyref{Player}{p.}{class_player} Health Rectangle Shape. \end{DoxyCompactList}\item 
+\mbox{\label{class_player_a9b18d876c7269fbc38c2a800aeff0722}} 
+sf\+::\+Clock \textbf{ Clock}
+\begin{DoxyCompactList}\small\item\em Clock variable. \end{DoxyCompactList}\item 
+\mbox{\label{class_player_a973633d722d7cdea12a6a170e5c98b43}} 
+float \textbf{ timestamp}
+\begin{DoxyCompactList}\small\item\em timestamp variable \end{DoxyCompactList}\item 
+\mbox{\label{class_player_ad119bab67624a8a51accaf81d5920c32}} 
+int \textbf{ Health}
+\begin{DoxyCompactList}\small\item\em Health variable. \end{DoxyCompactList}\item 
+\mbox{\label{class_player_aa43b6f4be963a43e412da368ba9a357e}} 
+float \textbf{ Health100}
+\begin{DoxyCompactList}\small\item\em Health variable. \end{DoxyCompactList}\item 
+\mbox{\label{class_player_a0b3218ca95aa469b71704d3d708384a8}} 
+float \textbf{ new\+Health}
+\begin{DoxyCompactList}\small\item\em Health variable. \end{DoxyCompactList}\item 
+\mbox{\label{class_player_aada9c697f2a6f3a51acb88f6eebcc357}} 
+float \textbf{ Damage1}
+\begin{DoxyCompactList}\small\item\em Damage variable. \end{DoxyCompactList}\item 
+\mbox{\label{class_player_a548ca233703b0b7d3ca794d2b60d8b4a}} 
+float \textbf{ Damage2}
+\begin{DoxyCompactList}\small\item\em Damage variable. \end{DoxyCompactList}\item 
+\mbox{\label{class_player_ae703a1c0f19d39a4ebe31a4b80ccbec7}} 
+float \textbf{ new\+Health100}
+\begin{DoxyCompactList}\small\item\em Health variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\textbackslash{}\+Player \doxyref{Player}{p.}{class_player} \textbackslash{}\+The \doxyref{Player}{p.}{class_player} class creates enemies 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_player_a12d7b68becc1d87bd6519814a5c495a4}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{Player()}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world,  }\item[{const sf\+::\+Vector2f \&}]{position,  }\item[{const sf\+::\+Vector2f \&}]{size,  }\item[{const float}]{orientation,  }\item[{\textbf{ Collision\+Filter}}]{type,  }\item[{sf\+::\+Texture $\ast$}]{Headtexture,  }\item[{sf\+::\+Texture $\ast$}]{Bodytexture,  }\item[{sf\+::\+Texture $\ast$}]{Armtexture,  }\item[{sf\+::\+Texture $\ast$}]{Legtexture }\end{DoxyParamCaption})}
+
+
+
+Default Constructor. 
+
+Complete contructor 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Dratedoni/\+Desktop/\+Projekty c++/\+Year 2 Term 2/\+Student Pack/lab code/\+C\+W\+Starter/\+C\+W\+Starter/include/\textbf{ Player.\+h}\item 
+D\+:/\+Dratedoni/\+Desktop/\+Projekty c++/\+Year 2 Term 2/\+Student Pack/lab code/\+C\+W\+Starter/\+C\+W\+Starter/src/\textbf{ Player.\+cpp}\end{DoxyCompactItemize}

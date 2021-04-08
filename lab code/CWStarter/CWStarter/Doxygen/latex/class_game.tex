@@ -1,0 +1,199 @@
+\doxysection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+Holds all information about the game, blocks, balls etc and allows updating and rendering.  
+
+
+
+
+{\ttfamily \#include $<$game.\+h$>$}
+
+Inheritance diagram for Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_game_ad59df6562a58a614fda24622d3715b65}} 
+\textbf{ Game} ()
+\begin{DoxyCompactList}\small\item\em Constructor which sets up the game. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_ae3d112ca6e0e55150d2fdbc704474530}} 
+\textbf{ $\sim$\+Game} ()
+\begin{DoxyCompactList}\small\item\em Destructor which cleans all the pointer memory up. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_acc8519c7ced1cf9eb9bbb3a2f325f6a0}} 
+void \textbf{ update} (float timestep)
+\begin{DoxyCompactList}\small\item\em Update the game with give timestep. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a143d1a2f8a527db60f1fe47ab3d854a7}} 
+void \textbf{ draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em Draw the game to the render context. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_aafc474b47e358aa7d811f750591b8624}} 
+void \textbf{ toggle\+Debug} ()
+\begin{DoxyCompactList}\small\item\em Toggle for debug drawing. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a8c29ee3428813c7bde69fe0cba950e79}} 
+void \textbf{ launch\+Block} ()
+\begin{DoxyCompactList}\small\item\em Give dynamic block some impluse to launch it upwards. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a516005ba51551ba82431bf5f03a8e934}} 
+void \textbf{ process\+Key\+Press} (sf\+::\+Keyboard\+::\+Key code, bool press)
+\begin{DoxyCompactList}\small\item\em function checking if buttons have been pressed (Debug Mode) \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a9a54b20d25c3e91189193e9e65b2ca9e}} 
+void \textbf{ process\+Mouse\+Press} (sf\+::\+Mouse\+::\+Button code)
+\begin{DoxyCompactList}\small\item\em function checking if mouse buttons have been pressed \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a6a3ac85c388243f8c18528236e0560a7}} 
+void \textbf{ on\+Mouse\+Moved} (sf\+::\+Vector2f xy)
+\begin{DoxyCompactList}\small\item\em function checking if mause have been moved \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a50ea3af66af5898d273f0fdacecd0b4e}} 
+void \textbf{ Getkeys} (bool W, bool S, bool A, bool D)
+\begin{DoxyCompactList}\small\item\em function checking if buttons have been pressed \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_game_a8e4670af7b7a28821aa27411f6dc6d17}} 
+sf\+::\+Vector2f \textbf{ m\+\_\+\+Direction}
+\begin{DoxyCompactList}\small\item\em Direction of the rey. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_game_a787213cdce2cb27753d2253ec6d35e0e}} 
+sf\+::\+View \textbf{ m\+\_\+main\+View}
+\begin{DoxyCompactList}\small\item\em The view maps from physical co-\/ordinates to rendering co-\/ordinates. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_aa7bce782fcfef127f8aa1a23020b22f3}} 
+sf\+::\+View {\bfseries m\+\_\+\+Hud\+View}
+\item 
+\mbox{\label{class_game_a362b54f875fd9373476f7b2878a697b9}} 
+sf\+::\+Vector2f \textbf{ m\+\_\+world\+Size} = sf\+::\+Vector2f(8.f, 6.f)
+\begin{DoxyCompactList}\small\item\em Size of the physical worlds is 8 X 6 metres. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_aece97c98f56f0ec078ff63893c4e093d}} 
+b2\+World $\ast$ \textbf{ m\+\_\+p\+World} = nullptr
+\begin{DoxyCompactList}\small\item\em Pointer to the Box2D world. Using pointers as B\+O\+X2D has it\textquotesingle{}s own memory management. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a000890af67b5247ba66479eef37f837c}} 
+const int \textbf{ mk\+\_\+i\+Vel\+Iterations} = 7
+\begin{DoxyCompactList}\small\item\em On each update there will be 7 velocity iterations in the physics engine. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a3a9e1c1ff454e4f1dd21e6398530fb30}} 
+const int \textbf{ mk\+\_\+i\+Pos\+Iterations} = 5
+\begin{DoxyCompactList}\small\item\em On each update there will be 5 position iterations on each update. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a4fd94489bec502630877a3a7fccbd596}} 
+const b2\+Vec2 \textbf{ mk\+\_\+gravity} = b2\+Vec2(0.f, 9.\+81f)
+\begin{DoxyCompactList}\small\item\em Standard earth gravity will be used (negate the value ofcourse!) \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a56adf7f99e06924603e143d3f3324321}} 
+sf\+::\+Clock \textbf{ clock}
+\begin{DoxyCompactList}\small\item\em Time of my game. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_abc0482af92da4e7a79738d141fcf669d}} 
+float {\bfseries m\+\_\+block\+Direction}
+\item 
+\mbox{\label{class_game_a39d2030b8fa674156067c3b471314f47}} 
+sf\+::\+Texture \textbf{ m\+\_\+\+Chest\+Texture}
+\begin{DoxyCompactList}\small\item\em chest texture \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a98f7a00d172b0fdae21db1b18f73c298}} 
+sf\+::\+Texture \textbf{ m\+\_\+\+Coin\+Texture}
+\begin{DoxyCompactList}\small\item\em coin texture \end{DoxyCompactList}\item 
+\mbox{\label{class_game_acc386ca372c8382817b17d9c82094cdf}} 
+sf\+::\+Texture \textbf{ m\+\_\+\+Bullet\+Texture}
+\begin{DoxyCompactList}\small\item\em bullet texture \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a3351a13204a8144187c40fdae3b11249}} 
+sf\+::\+Texture \textbf{ T\+\_\+\+Head}
+\begin{DoxyCompactList}\small\item\em Head texture for \doxyref{Player}{p.}{class_player}. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_aebf2900aaed14292c2a250c7765b5e3b}} 
+sf\+::\+Texture \textbf{ T\+\_\+\+Body}
+\begin{DoxyCompactList}\small\item\em Body texture for \doxyref{Player}{p.}{class_player}. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a8495c995c1f8476393af6f616a142ad5}} 
+sf\+::\+Texture \textbf{ T\+\_\+\+Arm}
+\begin{DoxyCompactList}\small\item\em Arm texture for \doxyref{Player}{p.}{class_player}. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_ab9a7f6ecc65970c5f009f4e1b9f725f3}} 
+sf\+::\+Texture \textbf{ T\+\_\+\+Legs}
+\begin{DoxyCompactList}\small\item\em Legs texture for \doxyref{Player}{p.}{class_player}. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a219636e17013fd8cfdd26f30b08e0400}} 
+sf\+::\+Texture \textbf{ t\+\_\+\+Background}
+\begin{DoxyCompactList}\small\item\em Background texture. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a5d27e0fab7228bce5b40b702d6d567e8}} 
+sf\+::\+Texture \textbf{ Game\+Over}
+\begin{DoxyCompactList}\small\item\em Game\+Over text texture. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_adc0ab3026925e790d4db8f9145c10b1f}} 
+sf\+::\+Texture \textbf{ Congrats}
+\begin{DoxyCompactList}\small\item\em Congrats text texture. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_adf852d014f88b8f572789093b5971677}} 
+sf\+::\+Texture \textbf{ Vault}
+\begin{DoxyCompactList}\small\item\em Vault texture. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a2bf13e75af104f8837575ad51d84d244}} 
+sf\+::\+Rectangle\+Shape \textbf{ s\+\_\+\+Background}
+\begin{DoxyCompactList}\small\item\em Rectangle shape used for drawing background texture. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_ae5d5b60e3b875975cb8041cebe099001}} 
+sf\+::\+Rectangle\+Shape \textbf{ s\+\_\+\+Background2}
+\begin{DoxyCompactList}\small\item\em Rectangle shape used for drawing background texture. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a824e162f66c7766521ad60237af48b43}} 
+sf\+::\+Rectangle\+Shape \textbf{ s\+\_\+\+GO}
+\begin{DoxyCompactList}\small\item\em Rectangle shape used for drawing Game\+Over texture. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a6967e7b7fa88a4bb60d3e2021dd97ed1}} 
+sf\+::\+Rectangle\+Shape \textbf{ s\+\_\+\+CO}
+\begin{DoxyCompactList}\small\item\em Rectangle shape used for drawing Congrats texture. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a314326f36058b4c0bca299a8519bdd81}} 
+sf\+::\+Rectangle\+Shape \textbf{ s\+\_\+V}
+\begin{DoxyCompactList}\small\item\em Rectangle shape used for drawing Vault texture. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a66d0d3a6229f548a4724c42fb2f56ec6}} 
+int \textbf{ Collectedcoins} = 0
+\begin{DoxyCompactList}\small\item\em Number of collected coins. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_ae8d54d2e56dd567115c9e152a8b0344f}} 
+\textbf{ Hud} \textbf{ H\+\_\+\+Hud}
+\begin{DoxyCompactList}\small\item\em \doxyref{Hud}{p.}{class_hud} class object. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a14229310e26ae70f13ffae49749e3888}} 
+\textbf{ Player} \textbf{ m\+\_\+\+Player\+One}
+\begin{DoxyCompactList}\small\item\em \doxyref{Player}{p.}{class_player} class object. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_ab1d8da9766160be85fb663e38169a35a}} 
+\textbf{ Ray} \textbf{ m\+\_\+ray}
+\begin{DoxyCompactList}\small\item\em \doxyref{Ray}{p.}{class_ray} class object. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a5272fc54388eb499802074e6922ab241}} 
+std\+::vector$<$ \textbf{ Bullet} $>$ \textbf{ m\+\_\+\+Bullets}
+\begin{DoxyCompactList}\small\item\em vector objects of \doxyref{Bullet}{p.}{class_bullet} class \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a9352a6e646ea4ddc8c26de373c1a9e5a}} 
+std\+::vector$<$ \textbf{ Enemy\+Bullet} $>$ \textbf{ m\+\_\+\+E\+Bullets}
+\begin{DoxyCompactList}\small\item\em vector objects of \doxyref{Enemy\+Bullet}{p.}{class_enemy_bullet} class \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a0d33d40f30f21c61bfbfda57451b830a}} 
+sf\+::\+Mouse\+::\+Button \textbf{ m\+\_\+code}
+\begin{DoxyCompactList}\small\item\em Mouse\+::\+Button object. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a03aca82f0f2b0e3b503acf3f668d3cfc}} 
+std\+::vector$<$ \textbf{ Static\+Block} $>$ \textbf{ m\+\_\+static\+Blocks}
+\begin{DoxyCompactList}\small\item\em vector objects of \doxyref{Static\+Block}{p.}{class_static_block} class \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a5fef142cc3112b07b580bb64f9354e3e}} 
+std\+::vector$<$ \textbf{ Kinematic\+Block} $>$ \textbf{ m\+\_\+kinematic\+Blocks}
+\begin{DoxyCompactList}\small\item\em vector objects of \doxyref{Kinematic\+Block}{p.}{class_kinematic_block} class \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a18e8d5e4442363c9de86e9a5b4227532}} 
+std\+::vector$<$ \textbf{ Enemy\+MarkI} $>$ \textbf{ m\+\_\+\+Enemy}
+\begin{DoxyCompactList}\small\item\em vector objects of \doxyref{Enemy\+MarkI}{p.}{class_enemy_mark_i} class \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a5ec24a0b1695de002368e501cbd21a62}} 
+std\+::vector$<$ \textbf{ Static\+Box\+Sensor} $>$ \textbf{ m\+\_\+chests}
+\begin{DoxyCompactList}\small\item\em vector objects of \doxyref{Static\+Box\+Sensor}{p.}{class_static_box_sensor} class \end{DoxyCompactList}\item 
+\mbox{\label{class_game_aca5d8aef7448267e7d20689510f9d28d}} 
+std\+::vector$<$ \textbf{ Coins} $>$ \textbf{ m\+\_\+coins}
+\begin{DoxyCompactList}\small\item\em vector objects of \doxyref{Coins}{p.}{class_coins} class \end{DoxyCompactList}\item 
+\mbox{\label{class_game_aa5a17b2459bd5332ba456a4b69400cf4}} 
+std\+::vector$<$ \textbf{ Enemy\+Sensor} $>$ \textbf{ m\+\_\+esensor}
+\begin{DoxyCompactList}\small\item\em vector objects of \doxyref{Enemy\+Sensor}{p.}{class_enemy_sensor} class \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a29ceea378e2fb7441a7de2914c03fe79}} 
+\textbf{ Block\+Player\+Contact\+Listener} \textbf{ m\+\_\+listener}
+\begin{DoxyCompactList}\small\item\em \doxyref{Block\+Player\+Contact\+Listener}{p.}{class_block_player_contact_listener} class object. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a8604ec6203f31ac5603bd597f49834d0}} 
+bool \textbf{ m\+\_\+debug} = false
+\begin{DoxyCompactList}\small\item\em Toggle for debug drawing. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_a97864905251b06ce5c8ae7c6774e423d}} 
+\textbf{ S\+F\+M\+L\+Debug\+Draw} \textbf{ m\+\_\+debug\+Draw}
+\begin{DoxyCompactList}\small\item\em Box2D debug drawing. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_aaf164be48e890abbe548c431f56b41c6}} 
+bool \textbf{ stop} = false
+\begin{DoxyCompactList}\small\item\em Variable used to stop the game after losing a life. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_ac473dd74a8122ab2bb7339d42974607b}} 
+\textbf{ Win} \textbf{ victory}
+\begin{DoxyCompactList}\small\item\em \doxyref{Win}{p.}{class_win} class object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Holds all information about the game, blocks, balls etc and allows updating and rendering. 
+
+\textbackslash{}game game 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Dratedoni/\+Desktop/\+Projekty c++/\+Year 2 Term 2/\+Student Pack/lab code/\+C\+W\+Starter/\+C\+W\+Starter/include/\textbf{ game.\+h}\item 
+D\+:/\+Dratedoni/\+Desktop/\+Projekty c++/\+Year 2 Term 2/\+Student Pack/lab code/\+C\+W\+Starter/\+C\+W\+Starter/src/\textbf{ game.\+cpp}\end{DoxyCompactItemize}

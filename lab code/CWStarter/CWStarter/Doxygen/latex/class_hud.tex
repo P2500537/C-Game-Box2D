@@ -1,0 +1,175 @@
+\doxysection{Hud Class Reference}
+\label{class_hud}\index{Hud@{Hud}}
+
+
+{\ttfamily \#include $<$Hud.\+h$>$}
+
+Inheritance diagram for Hud\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hud}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Hud} (b2\+World $\ast$world)
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\label{class_hud_a80fa85a6ba57bd709caca55dcfc20259}} 
+void \textbf{ draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em drawing function \end{DoxyCompactList}\item 
+\mbox{\label{class_hud_a0b82edce64e60b29cda7d566754eaeb1}} 
+void \textbf{ update} (sf\+::\+Clock time, int \textbf{ score})
+\begin{DoxyCompactList}\small\item\em Update rendering infomation. \end{DoxyCompactList}\item 
+\mbox{\label{class_hud_a2082bb1eeefe0be584180018e5e23f83}} 
+void \textbf{ Time\+Check} (sf\+::\+Clock time)
+\begin{DoxyCompactList}\small\item\em Time\+Check function. \end{DoxyCompactList}\item 
+\mbox{\label{class_hud_a1a20441faba0e5ef9e3c1a6cf1783a77}} 
+void \textbf{ Coin\+Check} (int \textbf{ score})
+\begin{DoxyCompactList}\small\item\em Coin\+Check function. \end{DoxyCompactList}\item 
+\mbox{\label{class_hud_ab95801f3cdf1357b5793137b71028bf0}} 
+sf\+::\+Texture \textbf{ Number\+Check} (int number)
+\begin{DoxyCompactList}\small\item\em texture Number\+Check function \end{DoxyCompactList}\item 
+\mbox{\label{class_hud_ad956b1400a9abc2f35e16c60e887abec}} 
+void \textbf{ T\+\_\+\+Texture\+Update} (sf\+::\+Texture $\ast$Texture, int i)
+\begin{DoxyCompactList}\small\item\em Updating texture for time counter. \end{DoxyCompactList}\item 
+\mbox{\label{class_hud_a7c707a37127735030a146a66b51b2f18}} 
+void \textbf{ C\+\_\+\+Texture\+Update} (sf\+::\+Texture $\ast$Texture, int i)
+\begin{DoxyCompactList}\small\item\em Updating texture for coin counter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_hud_a23f8b982027f2cdad842931b64e9fdf9}} 
+enum {\bfseries m\+\_\+number\+State} \{ \newline
+{\bfseries Zero}, 
+{\bfseries One}, 
+{\bfseries Two}, 
+{\bfseries Three}, 
+\newline
+{\bfseries Four}, 
+{\bfseries Five}, 
+{\bfseries Six}, 
+{\bfseries Seven}, 
+\newline
+{\bfseries Eight}, 
+{\bfseries Nine}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_hud_a9e8ac83a756776288261f6cb405368f1}} 
+int \textbf{ score}
+\begin{DoxyCompactList}\small\item\em score variable \end{DoxyCompactList}\item 
+\mbox{\label{class_hud_a725270488f69b6c1b59fe4bbaf6c4969}} 
+int {\bfseries H}
+\item 
+\mbox{\label{class_hud_a229e1de56e3afdd007843402f89785fd}} 
+int {\bfseries M}
+\item 
+\mbox{\label{class_hud_a083a8573a2c82e9d9c66f6ccf294585b}} 
+int {\bfseries S}
+\item 
+\mbox{\label{class_hud_ae65bac3c17a3beeff2760c9e7140a569}} 
+int \textbf{ C}
+\begin{DoxyCompactList}\small\item\em Hours, minutes and seconds variables. \end{DoxyCompactList}\item 
+\mbox{\label{class_hud_ae2c6f628808580e787024f2580074c9f}} 
+int {\bfseries S1}
+\item 
+\mbox{\label{class_hud_a280f452c2f7fe39c89d692292e4cb977}} 
+int {\bfseries S2}
+\item 
+\mbox{\label{class_hud_a0adc0aa56642393ba52a903c2e4dd1d5}} 
+int {\bfseries M1}
+\item 
+\mbox{\label{class_hud_a765d2510ed36fa700fcc0007b3b570c3}} 
+int {\bfseries M2}
+\item 
+\mbox{\label{class_hud_ab17f721814985d38b76a2e42cd43cca5}} 
+int {\bfseries H1}
+\item 
+\mbox{\label{class_hud_ac01741fe17ef041545a4f851534aa948}} 
+int {\bfseries H2}
+\item 
+\mbox{\label{class_hud_a654b271d53d6148e9cb8e137c7ec75c7}} 
+int {\bfseries C1}
+\item 
+\mbox{\label{class_hud_a339e5e29a7c04103f5732d87b6790a42}} 
+int \textbf{ C2}
+\begin{DoxyCompactList}\small\item\em Hours, minutes and seconds variables. \end{DoxyCompactList}\item 
+\mbox{\label{class_hud_a3cdf429e30889231e02040a2fa91f0bf}} 
+m\+\_\+number\+State \textbf{ m\+\_\+number\+State}
+\begin{DoxyCompactList}\small\item\em m\+\_\+number\+State enum variable \end{DoxyCompactList}\item 
+\mbox{\label{class_hud_a94dd4916c3805196df71955c8a9d7388}} 
+sf\+::\+Texture {\bfseries Coins}
+\item 
+\mbox{\label{class_hud_a1e4a54be813306e75497205ce70b1ac0}} 
+sf\+::\+Texture {\bfseries Colon}
+\item 
+\mbox{\label{class_hud_a6539fed9b5ff8bdea6b8f554cdca6e6d}} 
+sf\+::\+Texture {\bfseries Zero0}
+\item 
+\mbox{\label{class_hud_a942e17e19fca85f9270079deae73c036}} 
+sf\+::\+Texture {\bfseries One1}
+\item 
+\mbox{\label{class_hud_a5343b101e6bb045a1853a3ddbe495446}} 
+sf\+::\+Texture {\bfseries Two2}
+\item 
+\mbox{\label{class_hud_afde6a01b8945965c143f05f6532d9edd}} 
+sf\+::\+Texture {\bfseries Three3}
+\item 
+\mbox{\label{class_hud_a5e75b50827ad7b2fff527fb672e71e43}} 
+sf\+::\+Texture {\bfseries Four4}
+\item 
+\mbox{\label{class_hud_a51d134131e66fd88727a882430291ec1}} 
+sf\+::\+Texture {\bfseries Five5}
+\item 
+\mbox{\label{class_hud_af14009f76618993b713de455d83c2bb8}} 
+sf\+::\+Texture {\bfseries Six6}
+\item 
+\mbox{\label{class_hud_a5effba2fba0ed484ae636f6d0f42b810}} 
+sf\+::\+Texture {\bfseries Seven7}
+\item 
+\mbox{\label{class_hud_adc8ee1fa3de88af4d8e44792cae3b344}} 
+sf\+::\+Texture {\bfseries Eight8}
+\item 
+\mbox{\label{class_hud_a3c0636b6719b4cba32b920b266730774}} 
+sf\+::\+Texture {\bfseries Nine9}
+\item 
+\mbox{\label{class_hud_a8822b0f56fa7e2869178d2e0570dbed2}} 
+sf\+::\+Texture \textbf{ Correct\+Number}
+\begin{DoxyCompactList}\small\item\em Textures for numbers, colon and \doxyref{Coins}{p.}{class_coins} text. \end{DoxyCompactList}\item 
+\mbox{\label{class_hud_af9c67052845c8edb5e746ceef097bf77}} 
+sf\+::\+Texture \textbf{ T\+\_\+\+Time\+Counter} [8]
+\begin{DoxyCompactList}\small\item\em Texture time\+Counter. \end{DoxyCompactList}\item 
+\mbox{\label{class_hud_a329258fd03eab81c9f2722fb0f9c74bd}} 
+sf\+::\+Texture \textbf{ T\+\_\+\+Coin\+Counter} [3]
+\begin{DoxyCompactList}\small\item\em Texture coin\+Counter. \end{DoxyCompactList}\item 
+\mbox{\label{class_hud_acde5d34462faca0e86056a7530bc1050}} 
+sf\+::\+Rectangle\+Shape \textbf{ S\+\_\+\+Time\+Counter} [8]
+\begin{DoxyCompactList}\small\item\em time\+Counter Shape \end{DoxyCompactList}\item 
+\mbox{\label{class_hud_a6d46a417ce948c0b225d7cb1a3d6713d}} 
+sf\+::\+Rectangle\+Shape \textbf{ S\+\_\+\+Coin\+Counter} [3]
+\begin{DoxyCompactList}\small\item\em coin\+Counter Shape \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\textbackslash{}\+Hud \doxyref{Hud}{p.}{class_hud} \textbackslash{}\+The \doxyref{Hud}{p.}{class_hud} class creates \doxyref{Hud}{p.}{class_hud} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_hud_aa9ed81ae2be3d4a32bcf5b2980696457}} 
+\index{Hud@{Hud}!Hud@{Hud}}
+\index{Hud@{Hud}!Hud@{Hud}}
+\doxysubsubsection{Hud()}
+{\footnotesize\ttfamily Hud\+::\+Hud (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world }\end{DoxyParamCaption})}
+
+
+
+Default Constructor. 
+
+A constructor creating an object and determining its properties 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Dratedoni/\+Desktop/\+Projekty c++/\+Year 2 Term 2/\+Student Pack/lab code/\+C\+W\+Starter/\+C\+W\+Starter/include/\textbf{ Hud.\+h}\item 
+D\+:/\+Dratedoni/\+Desktop/\+Projekty c++/\+Year 2 Term 2/\+Student Pack/lab code/\+C\+W\+Starter/\+C\+W\+Starter/src/\textbf{ Hud.\+cpp}\end{DoxyCompactItemize}

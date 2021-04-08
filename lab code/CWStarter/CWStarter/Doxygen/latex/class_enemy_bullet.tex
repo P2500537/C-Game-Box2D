@@ -1,0 +1,58 @@
+\doxysection{Enemy\+Bullet Class Reference}
+\label{class_enemy_bullet}\index{EnemyBullet@{EnemyBullet}}
+
+
+{\ttfamily \#include $<$Enemy\+Bullet.\+h$>$}
+
+Inheritance diagram for Enemy\+Bullet\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_enemy_bullet}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_enemy_bullet_a6d2d03a7a1e01f3106d50d9d210dabf0}} 
+\textbf{ Enemy\+Bullet} (b2\+World $\ast$world, sf\+::\+Vector2f position, sf\+::\+Vector2f size, sf\+::\+Texture $\ast$texture, const float orientation, \textbf{ Collision\+Filter} type)
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_bullet_aed35fbd433baed2ebdea504e1032a38b}} 
+void \textbf{ draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em drawing function \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_bullet_a79c09030a1eb3e587f48a578552fbf7e}} 
+void \textbf{ update} ()
+\begin{DoxyCompactList}\small\item\em Update rendering infomation. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_bullet_a7d923815ab196ac063463862cf93599d}} 
+void \textbf{ Set\+Rotation} (float \textbf{ rotation})
+\begin{DoxyCompactList}\small\item\em Set rotation function. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_bullet_aab73914494f88c03649b2adf11f1032b}} 
+void \textbf{ on\+Action} ()
+\begin{DoxyCompactList}\small\item\em On action function. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_bullet_a0eae87b2e5c56d05d9451763217ef933}} 
+bool \textbf{ should\+Delete} ()
+\begin{DoxyCompactList}\small\item\em a function that adds an object to the list to be deleted \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_enemy_bullet_a0b1a7935a7c1b0b1d4202579b5ce4343}} 
+bool \textbf{ m\+\_\+delete}
+\begin{DoxyCompactList}\small\item\em variable to object deletion \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_enemy_bullet_a77c36b7d5597669ebbdf7aafd9597aac}} 
+sf\+::\+Rectangle\+Shape \textbf{ Bullet\+\_\+\+Body}
+\begin{DoxyCompactList}\small\item\em \doxyref{Bullet}{p.}{class_bullet} Body. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_bullet_abfb2e550ddbb30baa8543af5400efa9b}} 
+float \textbf{ rotation}
+\begin{DoxyCompactList}\small\item\em Rotation variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\textbackslash{}\+Enemy\+Bullet \doxyref{Enemy\+Bullet}{p.}{class_enemy_bullet} \textbackslash{}\+The \doxyref{Enemy\+Bullet}{p.}{class_enemy_bullet} class creates projectiles used by the enemy 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Dratedoni/\+Desktop/\+Projekty c++/\+Year 2 Term 2/\+Student Pack/lab code/\+C\+W\+Starter/\+C\+W\+Starter/include/\textbf{ Enemy\+Bullet.\+h}\item 
+D\+:/\+Dratedoni/\+Desktop/\+Projekty c++/\+Year 2 Term 2/\+Student Pack/lab code/\+C\+W\+Starter/\+C\+W\+Starter/src/\textbf{ Enemy\+Bullet.\+cpp}\end{DoxyCompactItemize}

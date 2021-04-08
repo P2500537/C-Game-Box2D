@@ -1,0 +1,63 @@
+\doxysection{Ray Class Reference}
+\label{class_ray}\index{Ray@{Ray}}
+
+
+{\ttfamily \#include $<$ray.\+h$>$}
+
+Inheritance diagram for Ray\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ray}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Ray} (b2\+World $\ast$world, float max\+Length, sf\+::\+Color colour)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\label{class_ray_afc8a3f675bb934cea2f047bbfb9597a4}} 
+void {\bfseries draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\item 
+\mbox{\label{class_ray_acde2450b618f638620ccd3468714a90f}} 
+void \textbf{ cast} (sf\+::\+Vector2f start)
+\begin{DoxyCompactList}\small\item\em Cast the ray. \end{DoxyCompactList}\item 
+\mbox{\label{class_ray_a72f8ef7bdd20b6058fac0705057c5120}} 
+void \textbf{ set\+Direction} (sf\+::\+Vector2f direction)
+\begin{DoxyCompactList}\small\item\em Set ray direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_ray_a7f8d05f27dfe023e1382d5fb0f361007}} 
+b2\+World $\ast$ \textbf{ m\+\_\+p\+World}
+\begin{DoxyCompactList}\small\item\em Pointer to the Box2D world. \end{DoxyCompactList}\item 
+\mbox{\label{class_ray_a6c5357a5624228b9345327e337a66e87}} 
+sf\+::\+Vertex\+Array \textbf{ m\+\_\+line}
+\begin{DoxyCompactList}\small\item\em Line to render the ray. \end{DoxyCompactList}\item 
+\mbox{\label{class_ray_aaf4cbc97159f2e09fd917e8434a717e3}} 
+sf\+::\+Vector2f \textbf{ m\+\_\+direction}
+\begin{DoxyCompactList}\small\item\em Direction of the ray. \end{DoxyCompactList}\item 
+\mbox{\label{class_ray_a112eef60af6ebd165e39048503835033}} 
+float \textbf{ m\+\_\+max\+Length}
+\begin{DoxyCompactList}\small\item\em Maximum length of the ray. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\textbackslash{}\+Ray \doxyref{Ray}{p.}{class_ray} \textbackslash{}\+The \doxyref{Ray}{p.}{class_ray} class creates \doxyref{Ray}{p.}{class_ray} used by the player 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_ray_a2ce6d95a4a26443f9bf004c453ad6cbd}} 
+\index{Ray@{Ray}!Ray@{Ray}}
+\index{Ray@{Ray}!Ray@{Ray}}
+\doxysubsubsection{Ray()}
+{\footnotesize\ttfamily Ray\+::\+Ray (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world,  }\item[{float}]{max\+Length,  }\item[{sf\+::\+Color}]{colour }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+Full constructor 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Dratedoni/\+Desktop/\+Projekty c++/\+Year 2 Term 2/\+Student Pack/lab code/\+C\+W\+Starter/\+C\+W\+Starter/include/\textbf{ ray.\+h}\item 
+D\+:/\+Dratedoni/\+Desktop/\+Projekty c++/\+Year 2 Term 2/\+Student Pack/lab code/\+C\+W\+Starter/\+C\+W\+Starter/src/\textbf{ ray.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+\doxysection{Physical\+Thing Class Reference}
+\label{class_physical_thing}\index{PhysicalThing@{PhysicalThing}}
+
+
+A simple class with common attributes and a few values used in a few places.  
+
+
+
+
+{\ttfamily \#include $<$physical\+Thing.\+h$>$}
+
+Inheritance diagram for Physical\+Thing\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{class_physical_thing}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_physical_thing_a5de3ca54435577beb3cdbf82205d7a27}} 
+enum \textbf{ Collision\+Filter} \{ \newline
+{\bfseries Player\+\_\+\+S\+E\+N\+S\+OR} = 1, 
+{\bfseries G\+R\+E\+E\+N\+B\+OX} = 2, 
+{\bfseries Enemy\+\_\+\+S\+E\+N\+S\+OR} = 4, 
+{\bfseries Colectables} = 8, 
+\newline
+{\bfseries Enemy} = 16, 
+{\bfseries P\+L\+A\+Y\+ER} = 32, 
+{\bfseries B\+U\+L\+L\+ET} = 64, 
+{\bfseries R\+A\+D\+A\+R\+\_\+\+S\+E\+N\+S\+OR} = 128, 
+\newline
+{\bfseries E\+N\+E\+M\+Y\+\_\+\+B\+U\+L\+L\+ET} = 256
+ \}
+\begin{DoxyCompactList}\small\item\em function for destroying a body \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_physical_thing_a648972fc6fedfd500bbf815a27931200}} 
+void {\bfseries destroy\+Body} ()
+\item 
+\mbox{\label{class_physical_thing_af19c0d5df32f7da216fcd111c4e34a9c}} 
+void {\bfseries set\+User\+Data} (void $\ast$data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_physical_thing_abe8104571d70d92609f154d522ce9880}} 
+b2\+Body $\ast$ \textbf{ m\+\_\+body} = nullptr
+\begin{DoxyCompactList}\small\item\em Box2D body, no need to delete this as B\+O\+X2D will look after it. \end{DoxyCompactList}\item 
+\mbox{\label{class_physical_thing_a40f7ce94212f8154e8e4a9864cde7c60}} 
+float \textbf{ mk\+\_\+f\+Density} = 1.\+0f
+\begin{DoxyCompactList}\small\item\em Density of the material -\/ used to give mass. \end{DoxyCompactList}\item 
+\mbox{\label{class_physical_thing_abb796eeea3127d7a77d84e1e43a3987d}} 
+float \textbf{ mk\+\_\+f\+Friction} = 0.\+4f
+\begin{DoxyCompactList}\small\item\em Friction -\/ I guess this is only friction from movement, not when static. \end{DoxyCompactList}\item 
+\mbox{\label{class_physical_thing_a6dbc7fdac106d2c4966d42cf27ce2c58}} 
+float \textbf{ mk\+\_\+f\+Restitution} = 0.\+4f
+\begin{DoxyCompactList}\small\item\em Restitution -\/ bouncyness of stuff. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A simple class with common attributes and a few values used in a few places. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Dratedoni/\+Desktop/\+Projekty c++/\+Year 2 Term 2/\+Student Pack/lab code/\+C\+W\+Starter/\+C\+W\+Starter/include/\textbf{ physical\+Thing.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,85 @@
+\doxysection{Kinematic\+Block Class Reference}
+\label{class_kinematic_block}\index{KinematicBlock@{KinematicBlock}}
+
+
+{\ttfamily \#include $<$Kinematic\+Block.\+h$>$}
+
+Inheritance diagram for Kinematic\+Block\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_kinematic_block}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Kinematic\+Block} (b2\+World $\ast$world, const sf\+::\+Vector2f \&position, const sf\+::\+Vector2f \&size, float \textbf{ range}, char \textbf{ VorH}, \textbf{ Collision\+Filter} type, sf\+::\+Texture $\ast$texture)
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\label{class_kinematic_block_acaaa6d41167393001c0d68a96dd5a042}} 
+void \textbf{ draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em Update rendering infomation. \end{DoxyCompactList}\item 
+\mbox{\label{class_kinematic_block_a97943c84af1f8a19f04d209f0938b491}} 
+void \textbf{ update} ()
+\begin{DoxyCompactList}\small\item\em Update rendering infomation. \end{DoxyCompactList}\item 
+\mbox{\label{class_kinematic_block_a273a22886cd5b292a11d706328026e04}} 
+void \textbf{ update\+Texture} (sf\+::\+Texture $\ast$texture)
+\begin{DoxyCompactList}\small\item\em update\+Texture function \end{DoxyCompactList}\item 
+\mbox{\label{class_kinematic_block_a81d62e18ea162f405d57f14d7b97ab43}} 
+void \textbf{ on\+Action} ()
+\begin{DoxyCompactList}\small\item\em On action function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_kinematic_block_a6007bec823315209739340e46ca0d893}} 
+sf\+::\+Rectangle\+Shape \textbf{ Kinematic\+\_\+\+Body\+Sensor}
+\begin{DoxyCompactList}\small\item\em Kinematic Sensor Body. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_kinematic_block_a2eed4e4e7e90a0fc769200414de26bae}} 
+sf\+::\+Rectangle\+Shape \textbf{ Kinematic\+\_\+\+Body}
+\begin{DoxyCompactList}\small\item\em Kinematic Body. \end{DoxyCompactList}\item 
+\mbox{\label{class_kinematic_block_aaf166378b6ccdc2478dde5d6936d39da}} 
+b2\+Polygon\+Shape \textbf{ Rectangle\+Sensor}
+\begin{DoxyCompactList}\small\item\em Rectangle Sensor Polygon Shape. \end{DoxyCompactList}\item 
+\mbox{\label{class_kinematic_block_a8617f41cbc2c51ba557de82339c54702}} 
+bool \textbf{ right} =true
+\begin{DoxyCompactList}\small\item\em movement variable \end{DoxyCompactList}\item 
+\mbox{\label{class_kinematic_block_ae8c114fcfa2cb06a237fa0e0b39e1185}} 
+char \textbf{ VorH}
+\begin{DoxyCompactList}\small\item\em Vertical or horizontal movement variable. \end{DoxyCompactList}\item 
+\mbox{\label{class_kinematic_block_aedc71cb5f08bdd2eaddc4586dfea93ef}} 
+sf\+::\+Vector2f \textbf{ firstposition}
+\begin{DoxyCompactList}\small\item\em firstposition variable \end{DoxyCompactList}\item 
+\mbox{\label{class_kinematic_block_a284b5690b76f3afdd2b04bfa15562ca6}} 
+sf\+::\+Vector2f \textbf{ lastposition}
+\begin{DoxyCompactList}\small\item\em lastposition variable \end{DoxyCompactList}\item 
+\mbox{\label{class_kinematic_block_afd6b2c7f3d6f574754fcdc39b383a936}} 
+float \textbf{ orientation}
+\begin{DoxyCompactList}\small\item\em orientation variable \end{DoxyCompactList}\item 
+\mbox{\label{class_kinematic_block_a4f954a0aac30e33792702f71d59b1373}} 
+float \textbf{ range}
+\begin{DoxyCompactList}\small\item\em range variable \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\textbackslash{}\+Kinematic\+Block \doxyref{Kinematic\+Block}{p.}{class_kinematic_block} \textbackslash{}\+The \doxyref{Kinematic\+Block}{p.}{class_kinematic_block} class creates kinematic blocks 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_kinematic_block_a744cacf2fe2a6b14b952bf2887d7a992}} 
+\index{KinematicBlock@{KinematicBlock}!KinematicBlock@{KinematicBlock}}
+\index{KinematicBlock@{KinematicBlock}!KinematicBlock@{KinematicBlock}}
+\doxysubsubsection{KinematicBlock()}
+{\footnotesize\ttfamily Kinematic\+Block\+::\+Kinematic\+Block (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world,  }\item[{const sf\+::\+Vector2f \&}]{position,  }\item[{const sf\+::\+Vector2f \&}]{size,  }\item[{float}]{range,  }\item[{char}]{VorH,  }\item[{\textbf{ Collision\+Filter}}]{type,  }\item[{sf\+::\+Texture $\ast$}]{texture }\end{DoxyParamCaption})}
+
+
+
+Default Constructor. 
+
+A constructor creating an object and determining its properties 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Dratedoni/\+Desktop/\+Projekty c++/\+Year 2 Term 2/\+Student Pack/lab code/\+C\+W\+Starter/\+C\+W\+Starter/include/\textbf{ Kinematic\+Block.\+h}\item 
+D\+:/\+Dratedoni/\+Desktop/\+Projekty c++/\+Year 2 Term 2/\+Student Pack/lab code/\+C\+W\+Starter/\+C\+W\+Starter/src/\textbf{ Kinematic\+Block.\+cpp}\end{DoxyCompactItemize}

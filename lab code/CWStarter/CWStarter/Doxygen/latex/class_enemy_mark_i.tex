@@ -1,0 +1,160 @@
+\doxysection{Enemy\+MarkI Class Reference}
+\label{class_enemy_mark_i}\index{EnemyMarkI@{EnemyMarkI}}
+
+
+{\ttfamily \#include $<$Enemy\+Mark\+I.\+h$>$}
+
+Inheritance diagram for Enemy\+MarkI\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_enemy_mark_i}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Enemy\+MarkI} (b2\+World $\ast$world, sf\+::\+Vector2f position, sf\+::\+Vector2f size, const float orientation)
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a12ab216bebc558d03e1f49bddd8958b3}} 
+void \textbf{ draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em drawing function \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_aa879869d3c304aa15c0fa2ec1877b076}} 
+void \textbf{ update} (sf\+::\+Clock \textbf{ Clock})
+\begin{DoxyCompactList}\small\item\em Update rendering infomation. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a885563a495daad4995b46dbfd5d24bca}} 
+void \textbf{ on\+Action} ()
+\begin{DoxyCompactList}\small\item\em On action function. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a3344f77826736547f9a522b71246d141}} 
+void \textbf{ off\+Action} ()
+\begin{DoxyCompactList}\small\item\em Off action function. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_ad0d87b7b2c7329ff2b4e3dd7e48f76c3}} 
+void \textbf{ Health\+Loss} ()
+\begin{DoxyCompactList}\small\item\em Health loss function. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a14ca25c0758d6a8d62fe3a1751734666}} 
+void \textbf{ register\+For\+Deletion} ()
+\begin{DoxyCompactList}\small\item\em a function that adds an object to the list to be deleted \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a23a8853c7bd4d56e26852de2f526a9d2}} 
+bool \textbf{ should\+Delete} ()
+\begin{DoxyCompactList}\small\item\em a function that adds an object to the list to be deleted \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a3fd9ad2de7ed197e386bc3161434c225}} 
+void \textbf{ radar\+Acquired\+Player} (\textbf{ Player} $\ast$player)
+\begin{DoxyCompactList}\small\item\em function checking if the player is in the field of view \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_af7a7ac3f1cc23a2ca4310c1d5f9845c8}} 
+void \textbf{ radar\+Lost\+Player} (\textbf{ Player} $\ast$player)
+\begin{DoxyCompactList}\small\item\em function checking if the player is in the field of view \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a2ac3e35e29e689f926ec51202fd2829e}} 
+void \textbf{ Player\+Pos} (sf\+::\+Vector2f xy)
+\begin{DoxyCompactList}\small\item\em \doxyref{Player}{p.}{class_player} position function. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_afe0be122e676ffbc4aab5484b6bf604c}} 
+void \textbf{ Bullet\+Delay} (sf\+::\+Clock T)
+\begin{DoxyCompactList}\small\item\em \doxyref{Bullet}{p.}{class_bullet} delay. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_ad7c3d90e031ae55f61e8ab63be02256f}} 
+sf\+::\+Vector2f {\bfseries get\+Position} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_enemy_mark_i_a48e5c47980a10d53e8ce557ad7cb340b}} 
+bool \textbf{ bullet} = true
+\begin{DoxyCompactList}\small\item\em decisive variable whether to shoot \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a0a7e6a94f87fbedd8eed10b90e3bbac0}} 
+int \textbf{ id} = 4
+\begin{DoxyCompactList}\small\item\em id variable for sensor check \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a6ea0a4ecb2f3b5eeedd22fce4ad8d3e9}} 
+bool \textbf{ m\+\_\+delete} = false
+\begin{DoxyCompactList}\small\item\em variable to object deletion \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a16360c2fd0489fd889ea48d0e4d8939b}} 
+float \textbf{ Health}
+\begin{DoxyCompactList}\small\item\em Health variable. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a358f37411c7a721e878e5e8cca60002c}} 
+sf\+::\+Rectangle\+Shape \textbf{ Sensor1}
+\begin{DoxyCompactList}\small\item\em sensor Shape \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_ab0ff894455bb33fb27837ae7fc59c036}} 
+sf\+::\+Rectangle\+Shape \textbf{ Sensor2}
+\begin{DoxyCompactList}\small\item\em sensor Shape \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_enemy_mark_i_a57ed77dc589145cc40c2203b8f4b5944}} 
+float \textbf{ Clock}
+\begin{DoxyCompactList}\small\item\em Clock variable. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a2731a8966794fa08dd03e4666056d786}} 
+float \textbf{ timestamp}
+\begin{DoxyCompactList}\small\item\em timestamp variable \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a4128340e3bb00fa3797a1cbf6ac7c57c}} 
+float \textbf{ Bullet\+Timestamp} = 0
+\begin{DoxyCompactList}\small\item\em \doxyref{Bullet}{p.}{class_bullet} timestamp variable. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_acfd0ac7fe6ef8ebda82a9762e5986531}} 
+char \textbf{ m\+\_\+type}
+\begin{DoxyCompactList}\small\item\em type variable \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_ad5750c186086dc0f2085ae6ae287c899}} 
+sf\+::\+Rectangle\+Shape \textbf{ Enemy\+\_\+\+Body}
+\begin{DoxyCompactList}\small\item\em Enemy Body Rectangle Shape. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a540e64905351eacb67f381d8774d2ac9}} 
+sf\+::\+Rectangle\+Shape \textbf{ Enemy\+\_\+\+Legs}
+\begin{DoxyCompactList}\small\item\em Enemy Legs Rectangle Shape. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a518602da750795d58c4b3c93b433ea49}} 
+sf\+::\+Rectangle\+Shape \textbf{ Enemy\+\_\+\+Arm}
+\begin{DoxyCompactList}\small\item\em Enemy Arm Rectangle Shape. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a6aa3a4fa498a93b0704985db20f882ef}} 
+sf\+::\+Rectangle\+Shape \textbf{ Enemy\+\_\+\+Health}
+\begin{DoxyCompactList}\small\item\em Enemy Health Rectangle Shape. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_afa5d8adab1e845e56bf79a4eb53bb8c7}} 
+b2\+Polygon\+Shape \textbf{ Rectangle\+Sensor1}
+\begin{DoxyCompactList}\small\item\em Rectangle sensor Polygon Shape. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a2b597592a73b0b9479d20d6b5561f096}} 
+b2\+Polygon\+Shape \textbf{ Rectangle\+Sensor2}
+\begin{DoxyCompactList}\small\item\em Rectangle sensor Polygon Shape. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a228f6190f4b84e0485076de2651faae1}} 
+bool \textbf{ right} = true
+\begin{DoxyCompactList}\small\item\em movement variable \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a4981bc4bb6318a938e6e79b1c211f60f}} 
+float \textbf{ Health100}
+\begin{DoxyCompactList}\small\item\em Health variable. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a042984ebd5ebba309e2c540421aa81d5}} 
+float \textbf{ new\+Health}
+\begin{DoxyCompactList}\small\item\em Health variable. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_aa54c183043eddcb248a9b8d4c57e5ece}} 
+float \textbf{ Damage}
+\begin{DoxyCompactList}\small\item\em Damage variable. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_ac57fc2e10e4c50e0d9fbcb770502a53b}} 
+float \textbf{ new\+Health100}
+\begin{DoxyCompactList}\small\item\em Health variable. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a7455027a3516c7569a2f6e3ccd98ca1a}} 
+int \textbf{ i} = 0
+\begin{DoxyCompactList}\small\item\em i variable \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a5f5c28158e01ce6d8f893cb0930e4bae}} 
+float \textbf{ velx} = 0
+\begin{DoxyCompactList}\small\item\em velocity x variable \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a6c165d4c1c842166c47793de78ddc0ab}} 
+std\+::vector$<$ \textbf{ Player} $\ast$ $>$ \textbf{ visible\+Enemies}
+\begin{DoxyCompactList}\small\item\em visible enemies vector \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a0e3f973199987c332cb0ca247abb0096}} 
+sf\+::\+Vector2f \textbf{ Playerxy}
+\begin{DoxyCompactList}\small\item\em \doxyref{Player}{p.}{class_player} x and y variable. \end{DoxyCompactList}\item 
+\mbox{\label{class_enemy_mark_i_a817fa1a69dde079876b0b817b8aac13b}} 
+float {\bfseries a} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\textbackslash{}\+Enemy\+MarkI \doxyref{Enemy\+MarkI}{p.}{class_enemy_mark_i} \textbackslash{}\+The \doxyref{Enemy\+MarkI}{p.}{class_enemy_mark_i} class creates enemies 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_enemy_mark_i_a812a36a1b4d6650557409e146fcd9fb2}} 
+\index{EnemyMarkI@{EnemyMarkI}!EnemyMarkI@{EnemyMarkI}}
+\index{EnemyMarkI@{EnemyMarkI}!EnemyMarkI@{EnemyMarkI}}
+\doxysubsubsection{EnemyMarkI()}
+{\footnotesize\ttfamily Enemy\+Mark\+I\+::\+Enemy\+MarkI (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world,  }\item[{sf\+::\+Vector2f}]{position,  }\item[{sf\+::\+Vector2f}]{size,  }\item[{const float}]{orientation }\end{DoxyParamCaption})}
+
+
+
+Default Constructor. 
+
+A constructor creating an object and determining its properties 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Dratedoni/\+Desktop/\+Projekty c++/\+Year 2 Term 2/\+Student Pack/lab code/\+C\+W\+Starter/\+C\+W\+Starter/include/\textbf{ Enemy\+Mark\+I.\+h}\item 
+D\+:/\+Dratedoni/\+Desktop/\+Projekty c++/\+Year 2 Term 2/\+Student Pack/lab code/\+C\+W\+Starter/\+C\+W\+Starter/src/\textbf{ Enemy\+Mark\+I.\+cpp}\end{DoxyCompactItemize}

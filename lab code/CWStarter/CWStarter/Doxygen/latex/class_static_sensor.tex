@@ -1,0 +1,54 @@
+\doxysection{Static\+Sensor Class Reference}
+\label{class_static_sensor}\index{StaticSensor@{StaticSensor}}
+
+
+A simple block which can not move or rotate and does not coliide with enemies.  
+
+
+
+
+{\ttfamily \#include $<$static\+Sensor.\+h$>$}
+
+Inheritance diagram for Static\+Sensor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_static_sensor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_static_sensor_a9e5aab882cd6f9c3410b8a1cf141712b}} 
+void \textbf{ init\+Rectangle} (b2\+World $\ast$world, sf\+::\+Vector2f position, sf\+::\+Vector2f size, float orientation, int \textbf{ id})
+\begin{DoxyCompactList}\small\item\em creates a rectangular sensor \end{DoxyCompactList}\item 
+\mbox{\label{class_static_sensor_a75c1caa2d1690fafb59017af3f58ea4c}} 
+void \textbf{ init\+Circle} (b2\+World $\ast$world, sf\+::\+Vector2f position, float radius)
+\begin{DoxyCompactList}\small\item\em creates a circular sensor \end{DoxyCompactList}\item 
+\mbox{\label{class_static_sensor_a5f4ec672c0546c4e444f716f32fd2cec}} 
+virtual void \textbf{ on\+Action} ()=0
+\begin{DoxyCompactList}\small\item\em Thing the sensor does when hit. \end{DoxyCompactList}\item 
+\mbox{\label{class_static_sensor_a79ca6cb91f5f67aedf820c2d81c06c9f}} 
+virtual void \textbf{ off\+Action} ()=0
+\begin{DoxyCompactList}\small\item\em Thing the sensor does when hit stops. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_static_sensor_ac19c8372d551d7c88656a0c6761df638}} 
+int \textbf{ id} = 0
+\begin{DoxyCompactList}\small\item\em id variable for sensor check \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_static_sensor_a3e9aaa0035fd8345d40a67c26d2b4529}} 
+void \textbf{ update} (sf\+::\+Texture $\ast$texture)
+\begin{DoxyCompactList}\small\item\em update function for sensor textures \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A simple block which can not move or rotate and does not coliide with enemies. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Dratedoni/\+Desktop/\+Projekty c++/\+Year 2 Term 2/\+Student Pack/lab code/\+C\+W\+Starter/\+C\+W\+Starter/include/\textbf{ static\+Sensor.\+h}\item 
+D\+:/\+Dratedoni/\+Desktop/\+Projekty c++/\+Year 2 Term 2/\+Student Pack/lab code/\+C\+W\+Starter/\+C\+W\+Starter/src/\textbf{ static\+Sensor.\+cpp}\end{DoxyCompactItemize}
